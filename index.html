@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />    
+    <title>Snapby</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="lib/images/favicon.png">
+    <meta name="description" content="">
+    <meta name="author" content="">
+        
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="lib/css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+    <!-- CSS concatenated and minified via ant build script-->
+    <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/animate.css">
+    <link rel="stylesheet" href="lib/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/js/prettyPhoto/css/prettyPhoto.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- end CSS-->
+    
+    <script src="lib/js/jquery-1.10.2.min.js"></script>
+    <script src="lib/js/jquery-migrate-1.2.1.js"></script>
+    
+</head>
+
+<body>
+
+    <!--begin container -->
+    <div id="container">
+        
+        <!--begin section_wrapper -->
+        <section class="section_wrapper">
+            
+            <!--begin section_box -->
+            <div class="section_box">
+              
+                <!--begin row -->
+                <div class="row">
+                    
+                    <!--begin twelvecol -->
+                    <div class="twelvecol">
+                    
+                        <!--begin section_description -->
+                        <div class="section_description left_fade">
+
+                            <div class="empty_space"></div>
+
+                            <h1 class="up_fade"><span class="text_color home_text4">Snapby</span></h1>
+                            
+                            <p>Beautiful pictures in your neightborhood.</p>
+                            
+                            <a href="https://itunes.apple.com/us/app/selflip/id886871278?mt=8" class="button"><i class="fa fa-apple"></i>&nbsp; DOWNLOAD APP</a>
+                            
+                        </div>
+                        <!--end section_description -->
+                        
+                        <!--begin section_image -->
+                        <div class="section_image right_fade">
+                            
+                            <img src="lib/images/iphone-snapby.png" alt="picture">
+                                                                   
+                        </div>
+                        <!--end section_image -->
+
+                        <div class="empty_space"></div>
+                         
+                    </div>
+                    <!--end twelvecol -->
+                    
+                </div>
+                <!--end row -->
+                
+            </div>
+            <!--end section_box -->
+            
+        </section>
+        <!--end section_wrapper -->
+        
+        <!--begin footer -->
+        <footer id="footer">
+            
+            <!--begin row -->
+            <div class="row">
+                
+                <!--begin twelvecol -->
+                <div class="twelvecol">  
+            
+                    <!--begin copyright -->            
+                    <p class="copyright">Copyright © 2014 Snapby. All rights reserved. Designed &amp; developed by <a href="http://bastien.me" target="_blank">Bastien</a>.</p>
+                    <!--end copyright -->
+                    
+                </div>
+                <!--end twelvecol -->
+                
+            </div>
+            <!--end row -->
+        
+        </footer>
+        <!--end footer -->
+           
+    </div>
+    <!--! end of #container -->
+    
+    <!-- scripts concatenated and minified via ant build script-->
+    <script src="lib/js/modernizr-2.6.1.min.js"></script>
+    <script src="lib/js/conditional.js"></script>
+    <script src="lib/js/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <script src="lib/js/script.js"></script>
+    <script src="lib/js/jquery.inview.js"></script>
+    
+    <!-- begin slider script-->
+    <script src="lib/js/responsiveslides.min.js"></script>
+  	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+	
+		  // Slideshow 4
+		  $("#slider4, #slider3").responsiveSlides({
+			auto: true,
+			pager: true,
+			nav: true,
+			pause: true,
+			speed: 500,
+			timeout: 5000,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+	
+		});
+  	</script>
+    <!-- end slider script-->
+    
+</body>
+</html>
